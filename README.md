@@ -55,6 +55,8 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 ---
 
 ### 2. Dots & Lines — Awwwards
+![Sitio Dots & Lines](https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/Dots%20%26%20Lines.png?raw=true)
+
 **Qué es:** Portafolio digital de una agencia creativa destacado por su estructura limpia y navegación visualmente coherente.  
 **Fuente:** [https://www.awwwards.com/sites/dotsandlines-design-agency](https://www.awwwards.com/sites/dotsandlines-design-agency)  
 
@@ -69,6 +71,8 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 ---
 
 ### 3. Atelier Matin
+![Sitio Atelier Matin](https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/AtelierMatin.png?raw=true)
+
 **Qué es:** Estudio francés de diseño gráfico con un sitio que destaca por su simplicidad, orden y coherencia visual.  
 **Fuente:** [https://www.ateliermatin.com/](https://www.ateliermatin.com/)  
 
@@ -99,6 +103,8 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 ---
 
 ### 5. Ludovic Roth — Rue Claretie
+![Sitio Ludovic Roth](https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/LudovicRoth.png?raw=true)
+
 **Qué es:** Sitio de portafolio del diseñador Ludovic Roth que presenta proyectos editoriales y tipográficos.  
 **Fuente:** [https://ludovicroth.com/works/rue-claretie](https://ludovicroth.com/works/rue-claretie)  
 
@@ -113,6 +119,8 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 ---
 
 ### 6. A-Andrea
+![Sitio A-Andrea](https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/A-Andrea.png?raw=true)
+
 **Qué es:** Estudio italiano de diseño multidisciplinario que combina branding, web y dirección de arte.  
 **Fuente:** [https://www.a-andrea.it/](https://www.a-andrea.it/)  
 
