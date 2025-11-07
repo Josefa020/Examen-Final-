@@ -38,7 +38,8 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 ---
 
 ### 1. Jellybean — Flabbergast Agency
-![Sitio Jellybean](./imgfinal/jellybean.png)
+![Sitio Jellybean](https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/jellybean.png?raw=true)
+
 
 **Qué es:** Estudio de diseño digital que presenta su caso de estudio “Jellybean”, enfocado en identidad visual y desarrollo web.  
 **Fuente:** [https://flabbergast.agency/case-study/jellybean/](https://flabbergast.agency/case-study/jellybean/)  
