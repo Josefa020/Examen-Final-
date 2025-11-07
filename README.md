@@ -47,7 +47,8 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 **Aspectos positivos:**  
 - Composición modular clara que distribuye bien texto e imagen.  
 - Jerarquía visual dinámica con uso de espacio en blanco.  
-- Scroll narrativo que guía la lectura del proyecto de forma fluida.  
+- Scroll narrativo que guía la lectura del proyecto de forma fluida.
+   
 **Aspectos negativos:**  
 - Transiciones extensas que pueden ralentizar la navegación.  
 - Tipografía pequeña en algunos bloques de texto.  
@@ -63,7 +64,8 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 **Aspectos positivos:**  
 - Grilla balanceada entre bloques de imagen y texto.  
 - Buena jerarquía tipográfica y ritmo visual constante.  
-- Uso de microinteracciones suaves que refuerzan la experiencia.  
+- Uso de microinteracciones suaves que refuerzan la experiencia.
+  
 **Aspectos negativos:**  
 - Predominio del blanco puede volver el diseño algo plano.  
 - Algunos elementos son demasiado sutiles al pasar el cursor.  
@@ -79,7 +81,8 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 **Aspectos positivos:**  
 - Diagramación clara tipo grid con equilibrio entre tipografía e imagen.  
 - Paleta neutra que resalta los proyectos.  
-- Navegación intuitiva y fluida.  
+- Navegación intuitiva y fluida.
+  
 **Aspectos negativos:**  
 - Falta de información textual detallada en cada proyecto.  
 - Contraste visual bajo en algunos apartados.  
@@ -95,7 +98,8 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 **Aspectos positivos:**  
 - Diseño expresivo con fuerte identidad visual.  
 - Composición no lineal que mantiene interés.  
-- Buen uso de color y textura para comunicar materialidad.  
+- Buen uso de color y textura para comunicar materialidad.
+  
 **Aspectos negativos:**  
 - Legibilidad reducida por exceso de animaciones.  
 - Saturación visual en ciertos momentos del recorrido.  
@@ -111,7 +115,8 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 **Aspectos positivos:**  
 - Diagramación editorial limpia y contemporánea.  
 - Buen uso del color para destacar secciones.  
-- Ritmo visual coherente con la estética del diseño impreso.  
+- Ritmo visual coherente con la estética del diseño impreso.
+  
 **Aspectos negativos:**  
 - Navegación poco evidente en dispositivos móviles.  
 - Carga inicial algo lenta por el tamaño de imágenes.  
@@ -127,7 +132,13 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 **Aspectos positivos:**  
 - Layout minimalista y elegante.  
 - Excelente manejo de márgenes y blancos.  
-- Tipografía contemporánea que refuerza el carácter del estudio.  
+- Tipografía contemporánea que refuerza el carácter del estudio.
+  
 **Aspectos negativos:**  
 - Falta de elementos visuales que aporten dinamismo.  
-- Poca diferenciación entre secciones internas.  
+- Poca diferenciación entre secciones internas.
+
+---
+## Referentes
+
+
