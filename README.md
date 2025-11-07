@@ -83,6 +83,8 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 ---
 
 ### 4. Re-Foam
+![Sitio Re-Foam](https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/Re-Foam.png?raw=true)
+
 **Qué es:** Estudio ruso de diseño experimental enfocado en materiales y procesos sostenibles.  
 **Fuente:** [https://re-foam.ru/](https://re-foam.ru/)  
 
