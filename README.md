@@ -8,6 +8,8 @@ Diseñar y desarrollar un **portafolio web personal** que permita presentar de m
 ## 2. ¿Para quiénes es esta propuesta? → Usuarios extremos y usuario promedio
 
 ### Usuaria extrema 1 — Sofía, 18 años  
+<img src="https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/perfil1.png?raw=true" alt="Imagen de perfil" width="300"/>
+
 - **Demografía:** Estudiante de primer año de Diseño Integral, vive en región, tiene poco conocimiento técnico sobre diseño web.  
 - **Comportamientos y creencias:** Usa redes sociales para inspirarse, pero se frustra con sitios poco claros o desordenados.  
 - **Necesidades y metas:** Busca ejemplos visualmente atractivos y bien estructurados para aprender cómo presentar sus propios proyectos.  
@@ -16,6 +18,8 @@ Diseñar y desarrollar un **portafolio web personal** que permita presentar de m
 ---
 
 ### Usuaria extrema 2 — Elena, 45 años  
+<img src="https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/perfil2.png?raw=true" alt="Imagen de perfil 2" width="300"/>
+
 - **Demografía:** Directora creativa de una agencia multidisciplinaria; trabaja con equipos de branding, diseño de producto y digital.  
 - **Comportamientos y creencias:** Tiene poco tiempo para explorar sitios web; le atraen las interfaces limpias y conceptualmente sólidas.  
 - **Necesidades y metas:** Quiere identificar portafolios con identidad visual clara y propuesta conceptual coherente.  
@@ -24,6 +28,8 @@ Diseñar y desarrollar un **portafolio web personal** que permita presentar de m
 ---
 
 ### Usuario promedio — Ignacio, 34 años  
+<img src="https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/perfil3.png?raw=true" alt="Imagen de perfil 3" width="300"/>
+
 - **Demografía:** Diseñador industrial senior en una empresa de desarrollo de productos, encargado de evaluar postulaciones y colaboraciones con diseñadores jóvenes.  
 - **Comportamientos y creencias:** Valora la presentación profesional y la capacidad de síntesis; prefiere sitios rápidos de explorar y con contenido bien documentado.  
 - **Necesidades y metas:** Quiere identificar diseñadores integrales con pensamiento estratégico y habilidades transversales.  
@@ -56,10 +62,10 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 ---
 
 ### 2. Dots & Lines — Awwwards
-![Sitio Dots & Lines](https://www.dotsandlines.io/kontakt/)
+![Sitio Dots & Lines](https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/Dots%20%26%20Lines.png?raw=true)
 
 **Qué es:** Portafolio digital de una agencia creativa destacado por su estructura limpia y navegación visualmente coherente.  
-**Fuente:** [https://www.awwwards.com/sites/dotsandlines-design-agency](https://www.awwwards.com/sites/dotsandlines-design-agency)  
+**Fuente:** (https://www.dotsandlines.io/)  
 
 **Aspectos positivos:**  
 - Grilla balanceada entre bloques de imagen y texto.  
@@ -140,5 +146,7 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 
 ---
 ## Referentes
+Colección de imágenes clave que definen la estética, paleta de colores y el tono para el diseño de la web, asegurando coherencia visual.
 
+![Moodboard completo para la web](https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/Moodboard.png?raw=true)
 
