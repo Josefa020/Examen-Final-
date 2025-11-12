@@ -56,7 +56,7 @@ Cada sitio aporta elementos relevantes para la organización visual y narrativa 
 ---
 
 ### 2. Dots & Lines — Awwwards
-![Sitio Dots & Lines](https://github.com/Josefa020/Examen-Final-/blob/main/imgfinal/Dots%20%26%20Lines.png?raw=true)
+![Sitio Dots & Lines](https://www.dotsandlines.io/kontakt/)
 
 **Qué es:** Portafolio digital de una agencia creativa destacado por su estructura limpia y navegación visualmente coherente.  
 **Fuente:** [https://www.awwwards.com/sites/dotsandlines-design-agency](https://www.awwwards.com/sites/dotsandlines-design-agency)  
