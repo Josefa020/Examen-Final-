@@ -1,12 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sitio web en construcción</title>
-  </head>
-  <body>
-    <h1>Hola mundo!</h1>
-  </body>
+    <title>Portafolio | Diseño</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+
+    <main>
+        <section class="hero-intro" id="titulo-principal"> 
+            <h1>Hola, soy Josefa</h1>
+            <p class="tagline">Explorando la intersección entre Branding, Producto y Experiencia Digital.</p>
+        </section>
+
+        <section id="proyectos" class="proyectos-grid">
+            <h2>Proyectos</h2>
+            
+            <a href="caso-estudio-1.html" class="proyecto-item" style="background-image: url('placeholder-1.jpg');">
+                <div class="overlay">
+                    <h3>Proyecto 1</h3>
+                    <p class="etiqueta">Identidad + Web</p>
+                </div>
+            </a>
+
+            <a href="caso-estudio-2.html" class="proyecto-item" style="background-image: url('placeholder-2.jpg');">
+                 <div class="overlay">
+                    <h3>Proyecto 2</h3>
+                    <p class="etiqueta">Materialidad + Sostenibilidad</p>
+                </div>
+            </a>
+
+             <a href="caso-estudio-3.html" class="proyecto-item grid-largo" style="background-image: url('placeholder-3.jpg');">
+                 <div class="overlay">
+                    <h3>Proyecto 3</h3>
+                    <p class="etiqueta">Diagramación + Tipografía</p>
+                </div>
+            </a>
+            
+        </section>
+        
+    </main>
+
+    <footer id="barraFlotante" class="barra-flotante">
+        
+        <div class="enlaces-barra">
+            
+            <div class="columna-barra">
+                <h3><a href="contacto.html">CONTACTO</a></h3>
+            </div>
+            
+            <div class="columna-barra">
+                <h3><a href="sobre-mi.html">SOBRE MÍ</a></h3>
+            </div>
+            
+            <div class="columna-barra menu-footer">
+                <h3><a href="#titulo-principal">MENÚ</a></h3>
+            </div>
+            
+        </div>
+        
+        <div class="titulo-footer">
+            <p>&copy; josefa pérez palacios | 2025</p>
+        </div>
+        
+    </footer>
+
+    <script src="menu.js"></script>
+
+</body>
 </html>

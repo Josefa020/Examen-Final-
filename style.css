@@ -1,0 +1,331 @@
+/* 1. VARIABLES Y BASE */
+:root {
+    --color-principal: #222222; 
+    --color-fondo: #f9f9f9;    
+    --color-acento: #e8491d;   
+    --color-acento-claro: #ffefe8;
+    --color-barra-fondo: #ffc93c; /* Color de acento para la barra (Amarillo) */
+    --espacio-padding: 4vw; 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    line-height: 1.6;
+}
+
+/* Base de Enlaces y Botones */
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.btn-acento {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.btn-acento:hover {
+    background-color: #d8390d;
+}
+
+/* 2. ENCABEZADO: ELIMINADO. SOLO QUEDA EL CONTENIDO MAIN */
+
+/* 3. MENÚ FLOTANTE Y OVERLAY: ELIMINADOS TODOS LOS ESTILOS DEL OVERLAY */
+
+
+/* 4. SECCIONES PRINCIPALES */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 20px; 
+    /* AJUSTE CLAVE: Margen inferior para evitar solapamiento del footer */
+    margin-bottom: 250px; 
+}
+
+/* HERO / INTRODUCCIÓN - PANTALLA COMPLETA Y CENTRADO */
+.hero-intro {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+    padding: 0 var(--espacio-padding);
+    max-width: 100%; 
+}
+
+.hero-intro h1 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 4.5rem; 
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #666;
+    max-width: 700px;
+}
+
+
+/* 5. BARRA FLOTANTE INFERIOR (EL RECUADRO DE COLOR) */
+.barra-flotante {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-barra-fondo); 
+    color: var(--color-principal);
+    z-index: 1500;
+    
+    transform: translateY(100%); 
+    transition: transform 0.5s ease;
+}
+
+.barra-flotante.visible {
+    transform: translateY(0); /* Se desliza hacia arriba al llegar al final del scroll */
+}
+
+.enlaces-barra {
+    /* MAQUETACIÓN DE 3 COLUMNAS HORIZONTAL CENTRADA */
+    display: flex; 
+    justify-content: center; 
+    gap: 100px; 
+    padding: 40px var(--espacio-padding) 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.columna-barra {
+    text-align: center; 
+}
+
+/* Estilo de los títulos de columna (ahora son enlaces directos) */
+.columna-barra h3 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.columna-barra h3 a {
+    color: inherit; 
+}
+
+.columna-barra p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+/* Título Inferior */
+.titulo-footer {
+    text-align: center;
+    padding: 20px var(--espacio-padding) 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.titulo-footer p {
+    /* Aquí se usa 'p' ya que el título inferior ya no es un enlace grande */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* 6. GRID DE PROYECTOS (Solo en index.html) */
+.proyectos-grid {
+    padding: 80px var(--espacio-padding);
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-auto-rows: 400px; 
+}
+
+.proyectos-grid h2 {
+    grid-column: 1 / -1; 
+    font-size: 2rem;
+    margin-bottom: 30px; 
+    padding-bottom: 10px;
+}
+
+.proyecto-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-largo {
+    grid-column: span 2; 
+}
+
+/* Overlay de información del proyecto */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: #ffffff;
+    transform: translateY(100%); 
+    transition: transform 0.4s ease;
+}
+
+.proyecto-item:hover .overlay {
+    transform: translateY(0); 
+}
+
+.overlay h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: #ffffff;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+}
+
+/* 7. LLAMADA A LA ACCIÓN (Solo en index.html) */
+.llamada-contacto {
+    text-align: center;
+    padding: 80px var(--espacio-padding);
+    background-color: var(--color-acento-claro); 
+    margin-top: 50px;
+}
+
+.llamada-contacto p {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+/* 8. ESTILOS PARA PÁGINAS SEPARADAS (sobre-mi.html, contacto.html) */
+
+.pagina-separada {
+    padding: 80px var(--espacio-padding); 
+    min-height: 70vh; 
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* Estilos de la página SOBRE MÍ (sobre-mi.html) */
+.sobre-mi {
+    display: grid;
+    grid-template-columns: 3fr 2fr; 
+    gap: 80px;
+    align-items: start;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+/* --- CORRECCIÓN DE DIAGRAMACIÓN DEL FORMULARIO DE CONTACTO --- */
+
+.info-y-formulario {
+    display: grid;
+    /* Divide la sección en 1/3 para info, 2/3 para el formulario */
+    grid-template-columns: 1fr 2fr; 
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.formulario label {
+    display: block; /* Mueve la etiqueta a su propia línea */
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    /* Fuerza a que los inputs y textarea ocupen todo el ancho de la columna */
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que el padding no desborde el 100% de ancho */
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.formulario textarea {
+    min-height: 180px; /* Tamaño grande para el mensaje */
+    resize: vertical; /* Permite al usuario redimensionar verticalmente */
+}
+
+.formulario button[type="submit"] {
+    margin-top: 20px;
+    width: auto; /* El botón se ajusta al contenido o al padding, no al 100% */
+}
+
+/* 9. MEDIA QUERIES (RESPONSIVE) */
+@media (max-width: 768px) {
+    
+    .hero-intro h1 {
+        font-size: 2.8rem;
+    }
+    
+    /* Barra Flotante en móvil (Apilamos las columnas) */
+    .enlaces-barra {
+        flex-direction: column; 
+        gap: 30px;
+        padding: 30px 20px 20px;
+    }
+    
+    .columna-barra {
+        margin-bottom: 0;
+        text-align: left; 
+    }
+
+    /* Proyectos en móvil: una sola columna */
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 300px;
+        padding: 40px var(--espacio-padding);
+    }
+    
+    .grid-largo {
+        grid-column: span 1; 
+    }
+    
+    /* Sobre Mí y Contacto en móvil: una sola columna */
+    .sobre-mi,
+    .info-y-formulario {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+        padding: 50px var(--espacio-padding);
+    }
+    
+    .imagen-perfil {
+        order: -1; 
+    }
+    
+    .subtitulo-bio {
+        font-size: 2rem;
+    }
+}
