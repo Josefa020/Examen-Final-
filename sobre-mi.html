@@ -3,56 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Diseño</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
+    <title>Sobre Mí | Josefa Pérez Palacios</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Switzer:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
-    
 </head>
+
 <body>
 
+    <!-- HEADER -->
+    <header id="topHeader">
+        <div class="logo-superior">
+            <a href="index.html#titulo-principal">josefa pérez palacios</a>
+        </div>
+
+        <div class="enlaces-rapidos">
+            <a href="https://www.linkedin.com/in/josefa-p%C3%A9rez-41b08435b/" 
+               target="_blank" class="icono-link" aria-label="LinkedIn">
+                <img src="assets/InBug-Black.png" alt="LinkedIn Logo" class="social-icon">
+            </a>
+
+            <a href="mailto:josefaperez2005@gmail.com" 
+               target="_blank" class="icono-link" aria-label="Correo electrónico">
+                <img src="assets/email-logo-cuadrado-negro.png" 
+                     alt="Email Logo" 
+                     class="social-icon email-adjusted-icon">
+            </a>
+        </div>
+    </header>
+
+
+    <!-- CONTENIDO -->
     <main>
-        
-        <section class="sobre-mi pagina-separada" id="titulo-principal"> 
+        <section class="sobre-mi pagina-separada" id="titulo-principal">
+
+            <!-- COLUMNA 1: TEXTO -->
             <div class="contenido-bio">
                 <h2 class="subtitulo-bio">Datos Sobre Mí</h2>
-                <p>Soy Josefa, diseñadora integral con enfoque en la resolución sistémica de problemas a través del cruce de disciplinas como el diseño de producto, la identidad visual y la experiencia de usuario (UX).</p>
-                
-                <p>Mi metodología se centra en la investigación profunda y la experimentación con la materialidad, lo que me permite crear soluciones que son no solo estéticas, sino también conceptualmente sólidas y sostenibles.</p>
+
+                <p>
+                    Soy Josefa, diseñadora integral con un enfoque orientado a la resolución
+                    sistémica de problemas, explorando la intersección entre diseño de producto,
+                    identidad visual y experiencia de usuario.
+                </p>
+
+                <p>
+                    Mi metodología se basa en la investigación profunda, la experimentación
+                    con materialidades y la búsqueda de soluciones coherentes, funcionales
+                    y visualmente significativas. Creo en el diseño como herramienta para
+                    transformar realidades y aportar valor en múltiples escalas.
+                </p>
 
                 <p class="habilidades-clave">
-                    Habilidades clave: Prototipado rápido | Diseño estratégico | Branding
+                    <strong>Habilidades clave:</strong> Prototipado rápido · Diseño estratégico · Ergonomía · Textil · Productos
                 </p>
             </div>
-            
+
+            <!-- COLUMNA 2: FOTO -->
             <div class="imagen-perfil">
-                <img src="foto_perfil.jpg" alt="Foto perfil">
+                <img src="assets/foto-perfil.jpg" alt="Foto de perfil">
             </div>
+
         </section>
-        
     </main>
 
+
+    <!-- FOOTER -->
     <footer id="barraFlotante" class="barra-flotante">
         <div class="enlaces-barra">
             <div class="columna-barra">
                 <h3><a href="contacto.html">CONTACTO</a></h3>
             </div>
-            
+
             <div class="columna-barra">
                 <h3><a href="sobre-mi.html">SOBRE MÍ</a></h3>
             </div>
-            
+
             <div class="columna-barra menu-footer">
                 <h3><a href="index.html#titulo-principal">MENÚ</a></h3>
             </div>
         </div>
-        
+
         <div class="titulo-footer">
-           <p>&copy; josefa pérez palacios | 2025</p>
+            <p>&copy; josefa pérez palacios | 2025</p>
         </div>
     </footer>
 
     <script src="menu.js"></script>
-
 </body>
 </html>

@@ -1,15 +1,15 @@
 /* 1. VARIABLES Y BASE */
 :root {
     --color-principal: #222222; 
-    --color-fondo: #f9f9f9;    
-    --color-acento: #e8491d;   
+    --color-fondo: #ffffff;
+    --color-acento: #6E0909;  
     --color-acento-claro: #ffefe8;
-    --color-barra-fondo: #ffc93c; /* Color de acento para la barra (Amarillo) */
-    --espacio-padding: 4vw; 
+    --color-barra-fondo: #F84F35; 
+    --espacio-padding: 1vw;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Switzer', sans-serif; 
     margin: 0;
     padding: 0;
     background-color: var(--color-fondo);
@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
 }
 
-/* Base de Enlaces y Botones */
+/* Base enlaces */
 a {
     color: inherit;
     text-decoration: none;
@@ -40,21 +40,60 @@ a {
     background-color: #d8390d;
 }
 
-/* 2. ENCABEZADO: ELIMINADO. SOLO QUEDA EL CONTENIDO MAIN */
+/* 2. HEADER */
+#topHeader {
+    max-width: 1400px; 
+    margin: 0 auto;
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.95); 
+    padding: 15px 5px !important; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
 
-/* 3. MENÚ FLOTANTE Y OVERLAY: ELIMINADOS TODOS LOS ESTILOS DEL OVERLAY */
+.enlaces-rapidos {
+    display: flex;
+    gap: 2px; 
+    align-items: center; 
+}
 
+.logo-superior {
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
 
-/* 4. SECCIONES PRINCIPALES */
+.social-icon {
+    height: 2.5rem; 
+    width: 2.5rem; 
+    object-fit: contain; 
+    display: block; 
+    opacity: 1; 
+    transition: opacity 0.3s;
+}
+
+.email-adjusted-icon {
+    height: 3rem; 
+    width: 3rem;
+    margin-right: -4px; 
+}
+
+.icono-link:hover .social-icon {
+    opacity: 1;
+    filter: brightness(0) saturate(100%) invert(10%) sepia(90%)
+            saturate(5000%) hue-rotate(350deg);
+}
+
+/* 4. MAIN */
 main {
     max-width: 1400px;
     margin: 0 auto;
-    padding-top: 20px; 
-    /* AJUSTE CLAVE: Margen inferior para evitar solapamiento del footer */
+    padding-top: 0; 
     margin-bottom: 250px; 
 }
 
-/* HERO / INTRODUCCIÓN - PANTALLA COMPLETA Y CENTRADO */
+/* HERO */
 .hero-intro {
     min-height: 100vh; 
     display: flex;
@@ -63,15 +102,15 @@ main {
     align-items: center;     
     text-align: center;      
     padding: 0 var(--espacio-padding);
-    max-width: 100%; 
 }
 
 .hero-intro h1 {
-    font-family: 'Playfair Display', serif; 
+    font-family: 'Switzer', sans-serif; 
     font-size: 4.5rem; 
     line-height: 1.1;
     margin-bottom: 20px;
-    font-weight: 700;
+    font-weight: 700; 
+    letter-spacing: -1px; 
 }
 
 .tagline {
@@ -80,31 +119,28 @@ main {
     max-width: 700px;
 }
 
-
-/* 5. BARRA FLOTANTE INFERIOR (EL RECUADRO DE COLOR) */
+/* 5. BARRA FLOTANTE */
 .barra-flotante {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--color-barra-fondo); 
-    color: var(--color-principal);
+    background-color: var(--color-acento);
+    color: #ffffff
     z-index: 1500;
-    
-    transform: translateY(100%); 
+    transform: translateY(100%);
     transition: transform 0.5s ease;
 }
 
 .barra-flotante.visible {
-    transform: translateY(0); /* Se desliza hacia arriba al llegar al final del scroll */
+    transform: translateY(0); 
 }
 
 .enlaces-barra {
-    /* MAQUETACIÓN DE 3 COLUMNAS HORIZONTAL CENTRADA */
     display: flex; 
     justify-content: center; 
     gap: 100px; 
-    padding: 40px var(--espacio-padding) 30px;
+    padding: 40px var(--espacio-padding) 30px; 
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -113,91 +149,75 @@ main {
     text-align: center; 
 }
 
-/* Estilo de los títulos de columna (ahora son enlaces directos) */
 .columna-barra h3 {
     text-transform: uppercase;
     font-size: 0.9rem;
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px;
     font-weight: 700;
 }
 
 .columna-barra h3 a {
-    color: inherit; 
+    color: #ffffff; /* ← Asegura que los enlaces sean blancos */
 }
 
-.columna-barra p {
-    font-size: 0.9rem;
-    margin: 5px 0;
-    line-height: 1.4;
-}
-
-/* Título Inferior */
 .titulo-footer {
     text-align: center;
     padding: 20px var(--espacio-padding) 40px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .titulo-footer p {
-    /* Aquí se usa 'p' ya que el título inferior ya no es un enlace grande */
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 0;
+    color: #ffffff; /* ← Asegura que el texto sea blanco */
 }
 
 
-/* 6. GRID DE PROYECTOS (Solo en index.html) */
-.proyectos-grid {
-    padding: 80px var(--espacio-padding);
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-auto-rows: 400px; 
+/* 6. GALERÍA */
+.galeria-flex {
+    padding: 30px 20px 80px; 
+    max-width: 1400px; 
+    margin: 0 auto; 
 }
 
-.proyectos-grid h2 {
-    grid-column: 1 / -1; 
+#proyectos-contenedor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 40px 20px; 
+}
+
+.galeria-flex h2 {
+    width: 100%; 
     font-size: 2rem;
-    margin-bottom: 30px; 
-    padding-bottom: 10px;
+    margin: 0 0 10px; 
 }
 
+/* TARJETA */
 .proyecto-item {
-    display: block;
+    flex: 0 0 calc(33.333% - 14px);
+    height: 350px;
     position: relative;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.grid-largo {
-    grid-column: span 2; 
-}
-
-/* Overlay de información del proyecto */
+/* OVERLAY */
 .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 20px;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-    color: #ffffff;
-    transform: translateY(100%); 
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: #fff;
+    transform: translateY(100%);
     transition: transform 0.4s ease;
 }
 
 .proyecto-item:hover .overlay {
     transform: translateY(0); 
-}
-
-.overlay h3 {
-    margin: 0 0 5px 0;
-    font-size: 1.5rem;
 }
 
 .etiqueta {
@@ -209,22 +229,15 @@ main {
     border-radius: 3px;
 }
 
-/* 7. LLAMADA A LA ACCIÓN (Solo en index.html) */
+/* 7. CALL TO ACTION */
 .llamada-contacto {
     text-align: center;
     padding: 80px var(--espacio-padding);
-    background-color: var(--color-acento-claro); 
+    background-color: var(--color-acento-claro);
     margin-top: 50px;
 }
 
-.llamada-contacto p {
-    font-size: 1.6rem;
-    margin-bottom: 25px;
-    font-weight: 300;
-}
-
-/* 8. ESTILOS PARA PÁGINAS SEPARADAS (sobre-mi.html, contacto.html) */
-
+/* 8. SOBRE MI + CONTACTO */
 .pagina-separada {
     padding: 80px var(--espacio-padding); 
     min-height: 70vh; 
@@ -232,100 +245,179 @@ main {
     max-width: 1000px;
 }
 
-/* Estilos de la página SOBRE MÍ (sobre-mi.html) */
+/* SOBRE MÍ (queda igual) */
 .sobre-mi {
     display: grid;
     grid-template-columns: 3fr 2fr; 
     gap: 80px;
-    align-items: start;
-    border-top: 1px solid #e0e0e0;
 }
 
+.imagen-perfil img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
-/* --- CORRECCIÓN DE DIAGRAMACIÓN DEL FORMULARIO DE CONTACTO --- */
-
+/* CONTACTO — DISEÑO VERTICAL */
 .info-y-formulario {
-    display: grid;
-    /* Divide la sección en 1/3 para info, 2/3 para el formulario */
-    grid-template-columns: 1fr 2fr; 
-    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     margin-top: 40px;
 }
 
-.formulario label {
-    display: block; /* Mueve la etiqueta a su propia línea */
-    margin-top: 15px;
+.info-contacto {
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.info-contacto h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
     font-weight: 700;
+}
+
+.info-contacto .nota {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* FORMULARIO */
+.formulario {
+    max-width: 800px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+
+.formulario h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
 }
 
 .formulario input[type="text"],
 .formulario input[type="email"],
 .formulario textarea {
-    /* Fuerza a que los inputs y textarea ocupen todo el ancho de la columna */
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     margin-top: 5px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Asegura que el padding no desborde el 100% de ancho */
-    font-family: inherit;
+    border-radius: 6px;
     font-size: 1rem;
-}
-
-.formulario textarea {
-    min-height: 180px; /* Tamaño grande para el mensaje */
-    resize: vertical; /* Permite al usuario redimensionar verticalmente */
+    box-sizing: border-box;
 }
 
 .formulario button[type="submit"] {
     margin-top: 20px;
-    width: auto; /* El botón se ajusta al contenido o al padding, no al 100% */
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-size: 1rem;
 }
 
-/* 9. MEDIA QUERIES (RESPONSIVE) */
+/* 9. RESPONSIVE */
 @media (max-width: 768px) {
-    
+
     .hero-intro h1 {
-        font-size: 2.8rem;
+        font-size: 3.2rem;
+        margin-bottom: 0;
     }
-    
-    /* Barra Flotante en móvil (Apilamos las columnas) */
+
     .enlaces-barra {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 30px;
         padding: 30px 20px 20px;
     }
-    
-    .columna-barra {
-        margin-bottom: 0;
-        text-align: left; 
+
+    #proyectos-contenedor {
+        flex-direction: column;
     }
 
-    /* Proyectos en móvil: una sola columna */
-    .proyectos-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 300px;
-        padding: 40px var(--espacio-padding);
+    .proyecto-item {
+        flex: 0 0 100%;
+        height: 320px;
     }
-    
-    .grid-largo {
-        grid-column: span 1; 
-    }
-    
-    /* Sobre Mí y Contacto en móvil: una sola columna */
+
     .sobre-mi,
     .info-y-formulario {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         gap: 40px;
-        padding: 50px var(--espacio-padding);
     }
-    
-    .imagen-perfil {
-        order: -1; 
+}
+
+
+
+
+
+
+/* =========================================================
+   ESTILO PROYECTOS — Texto fijo izquierda, imágenes derecha
+   ========================================================= */
+
+.proyecto-layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    padding: 100px 40px;
+}
+
+/* COLUMNA IZQUIERDA (TEXTO) */
+.proyecto-info {
+    width: 35%;
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+}
+
+.proyecto-info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.proyecto-info p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+    max-width: 90%;
+}
+
+/* COLUMNA DERECHA (IMÁGENES) */
+.proyecto-galeria {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.proyecto-galeria img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .proyecto-layout {
+        flex-direction: column;
+        padding: 40px 20px;
     }
-    
-    .subtitulo-bio {
-        font-size: 2rem;
+    .proyecto-info {
+        position: relative;
+        width: 100%;
+        top: 0;
+    }
+    .proyecto-galeria {
+        width: 100%;
     }
 }
