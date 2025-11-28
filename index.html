@@ -5,72 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <title>Portafolio | Diseño</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Switzer:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="style.css"> 
     
 </head>
 <body>
 
+    <header id="topHeader">
+        <div class="logo-superior">
+            <a href="index.html#titulo-principal">josefa pérez palacios</a>
+        </div>
+        <div class="enlaces-rapidos">
+            <a href="https://www.linkedin.com/in/josefa-p%C3%A9rez-41b08435b/" target="_blank" class="icono-link" aria-label="LinkedIn">
+                <img src="assets/InBug-Black.png" alt="LinkedIn Logo" class="social-icon">
+            </a>
+            <a href="mailto:josefaperez2005@gmail.com" target="_blank" class="icono-link" aria-label="Correo electrónico">
+                <img src="assets/email-logo-cuadrado-negro.png" alt="Email Logo" class="social-icon email-adjusted-icon">
+            </a>
+        </div>
+    </header>
+
     <main>
         <section class="hero-intro" id="titulo-principal"> 
             <h1>Hola, soy Josefa</h1>
-            <p class="tagline">Explorando la intersección entre Branding, Producto y Experiencia Digital.</p>
+            <p class="tagline">Diseñadora Integral</p>
         </section>
 
-        <section id="proyectos" class="proyectos-grid">
+
+        <section id="proyectos" class="galeria-flex">
             <h2>Proyectos</h2>
             
-            <a href="caso-estudio-1.html" class="proyecto-item" style="background-image: url('placeholder-1.jpg');">
-                <div class="overlay">
-                    <h3>Proyecto 1</h3>
-                    <p class="etiqueta">Identidad + Web</p>
-                </div>
-            </a>
-
-            <a href="caso-estudio-2.html" class="proyecto-item" style="background-image: url('placeholder-2.jpg');">
-                 <div class="overlay">
-                    <h3>Proyecto 2</h3>
-                    <p class="etiqueta">Materialidad + Sostenibilidad</p>
-                </div>
-            </a>
-
-             <a href="caso-estudio-3.html" class="proyecto-item grid-largo" style="background-image: url('placeholder-3.jpg');">
-                 <div class="overlay">
-                    <h3>Proyecto 3</h3>
-                    <p class="etiqueta">Diagramación + Tipografía</p>
-                </div>
-            </a>
+            <div id="proyectos-contenedor">
+            </div>
             
         </section>
         
     </main>
 
     <footer id="barraFlotante" class="barra-flotante">
-        
         <div class="enlaces-barra">
-            
-            <div class="columna-barra">
-                <h3><a href="contacto.html">CONTACTO</a></h3>
-            </div>
-            
-            <div class="columna-barra">
-                <h3><a href="sobre-mi.html">SOBRE MÍ</a></h3>
-            </div>
-            
-            <div class="columna-barra menu-footer">
-                <h3><a href="#titulo-principal">MENÚ</a></h3>
-            </div>
-            
+            <div class="columna-barra"><h3><a href="contacto.html">CONTACTO</a></h3></div>
+            <div class="columna-barra"><h3><a href="sobre-mi.html">SOBRE MÍ</a></h3></div>
+            <div class="columna-barra menu-footer"><h3><a href="#titulo-principal">MENÚ</a></h3></div>
         </div>
         
         <div class="titulo-footer">
             <p>&copy; josefa pérez palacios | 2025</p>
         </div>
-        
     </footer>
 
     <script src="menu.js"></script>
-
+    <script src="proyectos.js"></script> 
 </body>
 </html>
