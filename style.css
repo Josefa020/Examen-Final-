@@ -421,9 +421,3 @@ main {
         width: 100%;
     }
 }
-
-.proyecto-item {
-    content-visibility: auto;
-    contain-intrinsic-size: 450px;
-}
-
