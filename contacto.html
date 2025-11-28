@@ -3,71 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | [Tu Nombre]</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
+    <meta name="robots" content="noindex, nofollow">
+    <title>Contacto | Josefa Pérez Palacios</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Switzer:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
-    
 </head>
+
 <body>
 
-    <main>
-        
-        <section class="seccion-contacto pagina-separada" id="titulo-principal">
-            <h2 class="subtitulo-bio">Hablemos de tu proyecto.</h2>
-            <p class="tagline">Si buscas un enfoque estratégico e integral, escríbeme directamente a mi correo o completa el formulario.</p>
-            
-            <div class="info-y-formulario">
-                
-                <div class="info-contacto">
-                    <h3>Información Directa</h3>
-                    <p>
-                        Email: <a href="josefaperez2005@gmail.com">josefaperez2005@gmail.com</a><br>
-                        LinkedIn: <a href="https://www.linkedin.com/in/josefa-p%C3%A9rez-41b08435b/>">Josefa Pérez</a><br>
-                    </p>
-                </div>
+    <!-- HEADER -->
+    <header id="topHeader">
+        <div class="logo-superior">
+            <a href="index.html#titulo-principal">josefa pérez palacios</a>
+        </div>
 
-                <form class="formulario">
+        <div class="enlaces-rapidos">
+            <a href="https://www.linkedin.com/in/josefa-p%C3%A9rez-41b08435b/" 
+               target="_blank" class="icono-link" aria-label="LinkedIn">
+                <img src="assets/InBug-Black.png" alt="LinkedIn Logo" class="social-icon">
+            </a>
+
+            <a href="mailto:josefaperez2005@gmail.com" 
+               target="_blank" class="icono-link" aria-label="Correo electrónico">
+                <img src="assets/email-logo-cuadrado-negro.png" 
+                     alt="Email Logo" 
+                     class="social-icon email-adjusted-icon">
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main>
+        <section class="seccion-contacto pagina-separada" id="titulo-principal">
+
+            <h2 class="subtitulo-bio">Hablemos de tu proyecto.</h2>
+
+            <p class="tagline">
+                Si buscas un enfoque estratégico e integral, escríbeme directamente a mi correo
+                o completa el formulario.
+            </p>
+
+            <div class="info-y-formulario">
+
+
+                <!-- COLUMNA 2: FORMULARIO -->
+                <form class="formulario" action="https://formspree.io/f/xzzlrwby" method="POST">
                     <h3>Envíame un mensaje</h3>
-                    
+
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Tu email:</label>
+                    <input type="email" id="email" name="_replyto" required>
 
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
 
+                    <!-- Campo oculto para protección contra spam -->
+                    <input type="text" name="_gotcha" style="display:none">
+
                     <button type="submit" class="btn-acento">Enviar Mensaje</button>
                 </form>
+
             </div>
-            
         </section>
-        
     </main>
 
+
+    <!-- FOOTER -->
     <footer id="barraFlotante" class="barra-flotante">
         <div class="enlaces-barra">
             <div class="columna-barra">
                 <h3><a href="contacto.html">CONTACTO</a></h3>
             </div>
-            
+
             <div class="columna-barra">
                 <h3><a href="sobre-mi.html">SOBRE MÍ</a></h3>
             </div>
-            
+
             <div class="columna-barra menu-footer">
                 <h3><a href="index.html#titulo-principal">MENÚ</a></h3>
             </div>
         </div>
-        
+
         <div class="titulo-footer">
-           <p>&copy; josefa pérez palacios | 2025</p>
+            <p>&copy; josefa pérez palacios | 2025</p>
         </div>
     </footer>
 
     <script src="menu.js"></script>
-
 </body>
 </html>
