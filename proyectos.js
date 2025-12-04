@@ -5,42 +5,42 @@ const datosProyectos = [
     "titulo": "Noctu",
     "subtitulo": "Industrial",
     "enlace": "proyecto-1.html",
-    "imagen_url": "assets/proyecto1.jpg"
+    "imagen_url": "assets/proyecto1.webp"
   },
   {
     "id": "2025",
     "titulo": "Alicate Universal",
     "subtitulo": "Ergonomía",
     "enlace": "proyecto-2.html",
-    "imagen_url": "assets/proyecto2.jpg"
+    "imagen_url": "assets/proyecto2.webp"
   },
   {
     "id": "2025",
     "titulo": "Co-florecer",
     "subtitulo": "Estratégico",
     "enlace": "proyecto-3.html",
-    "imagen_url": "assets/proyecto3.jpg"
+    "imagen_url": "assets/proyecto3.webp"
   },
   {
     "id": "2025",
     "titulo": "Chile en 5 pilares",
     "subtitulo": "Estratégico",
     "enlace": "proyecto-4.html",
-    "imagen_url": "assets/proyecto4.jpg"
+    "imagen_url": "assets/proyecto4.webp"
   },
   {
     "id": "2024",
     "titulo": "Akutun",
     "subtitulo": "Souvenir",
     "enlace": "proyecto-5.html",
-    "imagen_url": "assets/proyecto5.jpg"
+    "imagen_url": "assets/proyecto5.webp"
   },
   {
     "id": "2025",
     "titulo": "El cuerpo paciente",
     "subtitulo": "Crítico",
     "enlace": "proyecto-6.html",
-    "imagen_url": "assets/proyecto6.jpg"
+    "imagen_url": "assets/proyecto6.webp"
   }
 ];
 
