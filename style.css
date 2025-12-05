@@ -106,7 +106,7 @@ main {
 
 .hero-intro h1 {
     font-family: 'Switzer', sans-serif; 
-    font-size: 4.5rem; 
+    font-size: 7rem; 
     line-height: 1.1;
     margin-bottom: 20px;
     font-weight: 700; 
@@ -249,8 +249,7 @@ main {
 .sobre-mi {
     display: grid;
     grid-template-columns: 3fr 2fr; 
-    gap: 80px;
-}
+    gap: 80px; }
 
 .imagen-perfil img {
     width: 100%;
